@@ -1,11 +1,11 @@
 {
 	"name": "FirstPipeline",
 	"properties": {
-		"description": "My first pipeline",
+		"description": "My first pipeline in test branch",
 		"activities": [
 			{
-				"name": "WaitActivity",
-				"description": "This is Wait Activity",
+				"name": "WaitActivity123",
+				"description": "Changing wait activity",
 				"type": "Wait",
 				"typeProperties": {
 					"waitTimeInSeconds": 5
