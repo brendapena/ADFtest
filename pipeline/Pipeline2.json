@@ -1,0 +1,33 @@
+{
+	"name": "Pipeline2",
+	"properties": {
+		"description": "This is pipeline 2",
+		"activities": [
+			{
+				"name": "WaitActivity1",
+				"description": "This is Wait Activity 1",
+				"type": "Wait",
+				"typeProperties": {
+					"waitTimeInSeconds": 5
+				}
+			},
+			{
+				"name": "WaitActivity2",
+				"description": "This is Wait Activity 2",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "WaitActivity1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"waitTimeInSeconds": 5
+				}
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
