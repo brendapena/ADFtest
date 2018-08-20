@@ -1,7 +1,7 @@
 {
 	"name": "Pipeline2",
 	"properties": {
-		"description": "This is pipeline 2",
+		"description": "This is pipeline 2\nThis is a new change on pipeline 2",
 		"activities": [
 			{
 				"name": "WaitActivity1",
